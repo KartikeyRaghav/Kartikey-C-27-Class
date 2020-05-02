@@ -40,7 +40,7 @@ function setup(){
 
     log6 = new Log(230,180,80,PI/2);
 
-    chain = new Chain(Bird.body,Log6.body);
+    chain = new Chain(Bird.body,log6.body);
 
     bird = new Bird(100,100);
 
