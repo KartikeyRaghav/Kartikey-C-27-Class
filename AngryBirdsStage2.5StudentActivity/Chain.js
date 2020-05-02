@@ -3,8 +3,8 @@ class Chain {
 	constructor(bodyA,bodyB) {
 	
 		var options = {
-			bodyA: bird.body,
-			bodyB: constraintLog.body,
+			bodyA: bodyA,
+			bodyB: bodyB,
 			stifness: 0.4,
 			lenght: 10
 		}
