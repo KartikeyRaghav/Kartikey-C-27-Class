@@ -38,6 +38,10 @@ function setup(){
     log4 = new Log(760,120,150, PI/7);
     log5 = new Log(870,120,150, -PI/7);
 
+    log6 = new Log(230,180,80,PI/2);
+
+    chain = new Chain(Bird.body,Log6.body);
+
     bird = new Bird(100,100);
 
     constraintLog = new Log(120,120,50,PI/2);	
@@ -81,6 +85,9 @@ function draw(){
     platform.display();
 
     constraintLog.display();
+
+    log6.display();
+    chain.display();
 
     strokeWeight(4);
     line(bird.body.position.x,bird.body.position.y,constraintLog.body.position.x,constraintLog.body.position.y);
