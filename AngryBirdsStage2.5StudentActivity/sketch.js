@@ -40,13 +40,13 @@ function setup(){
 
     bird = new Bird(100,100);
 
-    constaintLog = new Log(120,120,50,PI/2);	
+    constraintLog = new Log(120,120,50,PI/2);	
 
     var options ={
     	bodyA: bird.body,
-	bodyB: constraintLog.body,
-	stifness: 0.4,
-	length: 10
+	    bodyB: constraintLog.body,
+	    stifness: 0.4,
+	    length: 10
     }
 
     // Creating a constraint object	
@@ -81,4 +81,7 @@ function draw(){
     platform.display();
 
     constraintLog.display();
+
+    strokeWeight(4);
+    line(bird.body.position.x,bird.body.position.y,constraintLog.body.position.x,constraintLog.body.position.y);
 }
